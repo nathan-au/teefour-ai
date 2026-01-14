@@ -1,10 +1,10 @@
-# rpg-mini: AI-Powered Tax Accounting Automation
+# teefour-ai: AI-Powered Tax Accounting Automation
 
-![rpg-mini](https://github.com/user-attachments/assets/d3dfa410-5bff-4fbc-8630-e05ef96bdf86)
+![teefour-ai](https://github.com/user-attachments/assets/d3dfa410-5bff-4fbc-8630-e05ef96bdf86)
 
 ## Project Overview
 
-RPG-Mini is an end-to-end backend framework designed to support accounting professionals who manage numerous clients and document intakes. The system automates repetitive administrative tasks, such as document collection, categorization, and field extraction, to allow accountants to focus on review and decision-making rather than manual data entry.
+TeeFour AI is an end-to-end backend framework designed to support accounting professionals who manage numerous clients and document intakes. The system automates repetitive administrative tasks, such as document collection, categorization, and field extraction, to allow accountants to focus on review and decision-making rather than manual data entry.
 
 ## Key Features
 
@@ -25,7 +25,7 @@ A client is created with basic information (name, email) and a complexity level 
 
 ### 2. Intake Creation
 **Endpoint:** `POST /intakes/`  
-An intake represents a fiscal-year accounting case for a client. Upon intake creation, RPG-Mini generates a dynamic checklist based on the client's complexity and sets the intake status to open.
+An intake represents a fiscal-year accounting case for a client. Upon intake creation, TeeFour AI generates a dynamic checklist based on the client's complexity and sets the intake status to open.
 
 ### 3. Document Upload
 **Endpoint:** `POST /intakes/{intake_id}/documents`  
@@ -36,7 +36,7 @@ Documents can be uploaded in PDF, JPG, or PNG formats. Each file is validated, s
 Batch: `POST /intakes/{intake_id}/classify`  
 Single: `POST /documents/{document_id}/classify`
 <br>
-RPG-Mini reads text using OCR (PyMuPDF + pytesseract) and applies rule-based logic for keyword matching. The algorithm first attempts to classify based on the filename. If this initial attempt is not successful, the document's content is then extracted using OCR and scanned for keywords. The document is ultimately classified as one of the known types (T4, receipt, or ID), or marked as unknown if neither layer provides a match. This two-step process ensures both efficiency for clearly named files and robustness for files that require content-based inspection.
+TeeFour AI reads text using OCR (PyMuPDF + pytesseract) and applies rule-based logic for keyword matching. The algorithm first attempts to classify based on the filename. If this initial attempt is not successful, the document's content is then extracted using OCR and scanned for keywords. The document is ultimately classified as one of the known types (T4, receipt, or ID), or marked as unknown if neither layer provides a match. This two-step process ensures both efficiency for clearly named files and robustness for files that require content-based inspection.
 
 ### 5. Data Extraction
 **Endpoints:**  
@@ -60,12 +60,12 @@ Each intake has a dynamic checklist that updates as documents are classified and
 
 ## Installation
 
-Follow these steps to install and run RPG-Mini locally.
+Follow these steps to install and run TeeFour AI locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/nathan-au/rpg-mini.git
-cd rpg-mini
+git clone https://github.com/nathan-au/teefour-ai.git
+cd teefour-ai
 ```
 ### 2. Create and Activate a Virtual Environment
 ```bash

@@ -3,3 +3,5 @@ __pycache__/
 bucket/
 temp
 .pytest_cache
+database.db
+.DS_Store

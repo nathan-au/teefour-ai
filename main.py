@@ -5,7 +5,7 @@ from endpoints import clients, intakes, documents
 create_database_tables() #call function to create database tables 
 
 app = FastAPI( #creates new FastAPI app instance
-    title="RPG-Mini: Accounting Automation", #title shown in docs
+    title="TeeFour AI: Accounting Automation", #title shown in docs
     description="Developed by Nathan Au", #description shown in docs
 )
 
@@ -16,6 +16,6 @@ app.include_router(documents.router)
 @app.get("/")
 def root():
     return {
-        "message": "Welcome to RPG-Mini",
+        "message": "Welcome to TeeFour AI",
         "docs_url": "/docs"
     }
