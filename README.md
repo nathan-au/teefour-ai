@@ -74,7 +74,7 @@ venv\Scripts\activate          # Windows
 ```
 ### 3. Install Required Packages
 ```bash
-pip install fastapi uvicorn sqlmodel pydantic pymupdf pytesseract pdf2image unidecode pytest ollama
+pip install -r requirements.txt
 ```
 ### 4. Install Tesseract OCR 
 macOS:
