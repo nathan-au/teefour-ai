@@ -1,6 +1,5 @@
 # teefour-ai: AI-Powered Tax Accounting Automation
-
-![teefour-ai](https://github.com/user-attachments/assets/d3dfa410-5bff-4fbc-8630-e05ef96bdf86)
+<img width="2926" height="1634" alt="teefourai" src="https://github.com/user-attachments/assets/90925cc5-024e-460f-ab16-f3ac00ad871b" />
 
 ## Project Overview
 
